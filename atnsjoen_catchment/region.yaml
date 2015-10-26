@@ -1,7 +1,7 @@
 ---
 repository:
   class: shyft.orchestration2.netcdf.Region
-  data_file: /home/felix/hycamp/project_shyft/atnsjoen_catchment/data/atnsjoen_cell_info.nc
+  data_file: /home/hub-felixmatt/shyft-course/atnsjoen_catchment/data/atnsjoen_cell_info.nc
 
 domain:
   EPSG: 32633

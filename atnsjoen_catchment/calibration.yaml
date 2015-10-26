@@ -6,7 +6,7 @@ atnsjoen:
   target:
   - repository:
     class: shyft.orchestration2.netcdf.Target
-    file: /home/felix/hycamp/project_shyft/atnsjoen_catchment/data/atnsjoen_discharge.nc
+    file: /home/hub-felixmatt/shyft-course/atnsjoen_catchment/data/atnsjoen_discharge.nc
     1D_timeseries:
     - internal_id: atnsjoen
       # uid: /SHyFT/STS/Runoff/Vikf-Tistel, 2015-09-01T00:00:00

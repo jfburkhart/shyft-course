@@ -3,7 +3,7 @@ sources:
   - repository: source_repo1
     class: shyft.orchestration2.netcdf.SourceDataset
     params:
-      stations_met: /home/felix/hycamp/project_shyft/atnsjoen_catchment/data/atnsjoen_met.nc
+      stations_met: /home/hub-felixmatt/shyft-course/atnsjoen_catchment/data/atnsjoen_met.nc
       types:
         - type: precipitation
           stations:
@@ -49,7 +49,7 @@ sources:
               time: /fake_wind_speed/time
               location: /fake_wind_speed.x, /fake_wind_speed.y, /fake_wind_speed.z
 
-      stations_discharge: /home/felix/hycamp/project_shyft/atnsjoen_catchment/data/atnsjoen_discharge.nc
+      stations_discharge: /home/hub-felixmatt/shyft-course/atnsjoen_catchment/data/atnsjoen_discharge.nc
 
 # to be implemented...
 #destinations:
