@@ -1,17 +1,17 @@
 atnsjoen:
-  model_config_file: configuration.yaml
+  model_config_file: configuration_calibration.yaml
   calibrated_model_file: model_calibrated.yaml  # file where the calibrated params will go
   calibration_type: PTGSKOptimizer.optimize     # can be 'optimize' or 'optimize_dream'
   data_dir: .
   target:
   - repository:
     class: shyft.orchestration2.netcdf.Target
-    file: /home/hub-felixmatt/shyft-course/atnsjoen_catchment/data/atnsjoen_discharge.nc
+    file: /home/hub-felixmatt/shyft-course/atnsjoen_catchment/data/atnsjoen_discharge.nc #TODO: doesn't work with relative path!!
     1D_timeseries:
     - internal_id: atnsjoen
       # uid: /SHyFT/STS/Runoff/Vikf-Tistel, 2015-09-01T00:00:00
       uid: discharge
-      start_datetime: 2006-07-01T00:00:00
+      start_datetime: 2007-07-01T00:00:00
       run_time_step: 86400
       number_of_steps: 1826 # 5 years
       weight: 1.0
@@ -43,8 +43,8 @@ atnsjoen:
       min: -3.0
       max: 2.0
     wind_scale:
-      min: 0.0
-      max: 2.0
+      min: 2.0
+      max: 4.0
     max_water:
       min: 0.1
       max: 0.1

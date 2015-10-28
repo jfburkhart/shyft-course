@@ -1,13 +1,13 @@
 ---
 atnsjoen:
   config_dir: /home/hub-felixmatt/shyft-course/atnsjoen_catchment     # where to find other config files
+  #config_dir: atnsjoen_catchment
   data_dir: /home/hub-felixmatt/shyft-course/atnsjoen_catchment/data       # where to find data files
   repository:
     class: shyft.orchestration2.generic.Config
     params:         # add your own params here to initialize repository
   region_config_file: region.yaml
-  model_config_file: model.yaml
-  # model_config_file: /tmp/calibrated_model.yaml
+  model_config_file: /home/hub-felixmatt/shyft-course/atnsjoen_catchment/model_cal.yaml
   datasets_config_file: datasets.yaml
   start_datetime: 2005-07-01T00:00:00
   run_time_step: 86400

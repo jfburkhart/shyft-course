@@ -31,20 +31,9 @@ sources:
             - values: /WFDEI_station1/radiation
               time: /WFDEI_station1/time
               location: /WFDEI_station1.x, /WFDEI_station1.y, /WFDEI_station1.z
+            
         - type: wind_speed
           stations:
-            - values: /WFDEI_station1/radiation
-              time: /WFDEI_station1/time
-              location: /WFDEI_station1.x, /WFDEI_station1.y, /WFDEI_station1.z
-            - values: /WFDEI_station2/radiation
-              time: /WFDEI_station2/time
-              location: /WFDEI_station2.x, /WFDEI_station2.y, /WFDEI_station2.z
-            - values: /WFDEI_station3/radiation
-              time: /WFDEI_station3/time
-              location: /WFDEI_station3.x, /WFDEI_station3.y, /WFDEI_station3.z
-            - values: /WFDEI_station4/radiation
-              time: /WFDEI_station4/time
-              location: /WFDEI_station4.x, /WFDEI_station4.y, /WFDEI_station4.z
             - values: /fake_wind_speed/wind_speed
               time: /fake_wind_speed/time
               location: /fake_wind_speed.x, /fake_wind_speed.y, /fake_wind_speed.z
