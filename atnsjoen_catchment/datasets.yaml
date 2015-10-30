@@ -3,7 +3,7 @@ sources:
   - repository: source_repo1
     class: shyft.orchestration2.netcdf.SourceDataset
     params:
-      stations_met: /home/hub-felixmatt/shyft-course/atnsjoen_catchment/data/atnsjoen_met.nc
+      stations_met: /home/hub-felixmatt/shyft-course_day2/atnsjoen_catchment/data/atnsjoen_met.nc
       types:
         - type: precipitation
           stations:
@@ -31,14 +31,22 @@ sources:
             - values: /WFDEI_station1/radiation
               time: /WFDEI_station1/time
               location: /WFDEI_station1.x, /WFDEI_station1.y, /WFDEI_station1.z
-            
+            - values: /WFDEI_station2/radiation
+              time: /WFDEI_station2/time
+              location: /WFDEI_station2.x, /WFDEI_station2.y, /WFDEI_station2.z
+            - values: /WFDEI_station3/radiation
+              time: /WFDEI_station3/time
+              location: /WFDEI_station3.x, /WFDEI_station3.y, /WFDEI_station3.z
+            - values: /WFDEI_station4/radiation
+              time: /WFDEI_station4/time
+              location: /WFDEI_station4.x, /WFDEI_station4.y, /WFDEI_station4.z
         - type: wind_speed
           stations:
             - values: /fake_wind_speed/wind_speed
               time: /fake_wind_speed/time
               location: /fake_wind_speed.x, /fake_wind_speed.y, /fake_wind_speed.z
 
-      stations_discharge: /home/hub-felixmatt/shyft-course/atnsjoen_catchment/data/atnsjoen_discharge.nc
+      stations_discharge: /home/hub-felixmatt/shyft-course_day2/atnsjoen_catchment/data/atnsjoen_discharge.nc
 
 # to be implemented...
 #destinations:

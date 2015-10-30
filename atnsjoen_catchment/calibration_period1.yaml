@@ -1,6 +1,6 @@
 atnsjoen:
   model_config_file: configuration_calibration.yaml
-  calibrated_model_file: model_calibrated.yaml  # file where the calibrated params will go
+  calibrated_model_file: model_calibrated_period1.yaml  # file where the calibrated params will go
   calibration_type: PTGSKOptimizer.optimize     # can be 'optimize' or 'optimize_dream'
   data_dir: .
   target:
@@ -13,7 +13,7 @@ atnsjoen:
       uid: discharge
       start_datetime: 2007-07-01T00:00:00
       run_time_step: 86400
-      number_of_steps: 1826 # 5 years
+      number_of_steps: 1095 # 3 years
       weight: 1.0
       obj_func:
         name: NSE  # Nash–Sutcliffe efficiency (NSE) or Kling–Gupta efficiency (KGE)
@@ -28,8 +28,8 @@ atnsjoen:
     model: PTGSKOptModel
   calibration_parameters:
     c1:
-      min: -3.0
-      max: -1.0
+      min: -7.0
+      max: -2.0
     c2:
       min: 0.0
       max: 1.0
